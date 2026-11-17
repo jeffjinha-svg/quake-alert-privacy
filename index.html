@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>지진 경보 개인정보처리방침</title>
+<title>지진안전앱 - 개인 맞춤형 경보 개인정보처리방침</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -21,7 +21,6 @@
     body { color: #e6e6e6; background: #16181c; }
     h1, h2 { color: #fff; }
     code { background: #262a30; }
-    .note { background: #1e2228; border-color: #3a4048; }
   }
   h1 { font-size: 1.7rem; margin-bottom: .25rem; line-height: 1.35; }
   h2 { font-size: 1.2rem; margin-top: 2.25rem; }
@@ -37,12 +36,49 @@
     margin: 1.5rem 0;
   }
   footer { margin-top: 3rem; color: #6b7280; font-size: .9rem; }
+  .ident {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .3rem 1rem;
+    margin: 1rem 0 0;
+    font-size: .95rem;
+  }
+  .ident dt { color: #6b7280; }
+  .ident dd { margin: 0; }
+  /* 어두운 화면용 덮어쓰기. 기본 .note 규칙보다 뒤에 있어야 이긴다
+     (앞에 두었더니 밝은 바탕에 밝은 글씨가 되어 요약이 보이지 않았다). */
+  @media (prefers-color-scheme: dark) {
+    .note { background: #1e2228; border-color: #3a4048; }
+    .ident dt { color: #9aa3af; }
+  }
+  @media (max-width: 380px) {
+    .ident { grid-template-columns: 1fr; gap: 0; }
+    .ident dd { margin-bottom: .5rem; }
+  }
 </style>
 </head>
 <body>
 
-<h1>지진 경보 개인정보처리방침</h1>
-<p class="meta">앱 이름: 지진 경보 &middot; 시행일: 2026년 8월 21일</p>
+<h1>지진안전앱 - 개인 맞춤형 경보 개인정보처리방침</h1>
+<p>
+  이 개인정보처리방침은 Google Play에 <strong>&lsquo;지진안전앱 - 개인 맞춤형 경보&rsquo;</strong>로
+  등록된 앱(개발자: <strong>재난안전앱</strong>)에 적용됩니다.
+</p>
+
+<dl class="ident">
+  <dt>앱 이름 (Google Play)</dt>
+  <dd>지진안전앱 - 개인 맞춤형 경보</dd>
+  <dt>휴대폰에 표시되는 이름</dt>
+  <dd>지진 경보</dd>
+  <dt>패키지 이름</dt>
+  <dd><code>kr.quakealert.app</code></dd>
+  <dt>개발자</dt>
+  <dd>재난안전앱 (개인 개발자 김진하)</dd>
+  <dt>문의</dt>
+  <dd>jeffjinha@naver.com</dd>
+  <dt>시행일</dt>
+  <dd>2026년 8월 21일 (최종 수정 2026년 11월 17일)</dd>
+</dl>
 
 <div class="note">
   <strong>요약</strong> — 이 앱은 개인정보를 수집하지 않습니다.
@@ -153,15 +189,22 @@
 <p>
   이 방침이 바뀌면 이 페이지에 시행일과 함께 공지합니다.
 </p>
+<ul>
+  <li>
+    2026년 11월 17일 — 앱 이름, 패키지 이름, 개발자 정보를 명시했습니다.
+    정보를 수집하거나 이용하는 방식은 바뀌지 않았습니다.
+  </li>
+</ul>
 
 <h2>9. 문의</h2>
 <p>
-  jeffjinha@naver.com
+  개발자: 재난안전앱 (김진하)<br>
+  이메일: jeffjinha@naver.com
 </p>
 
 <footer>
   이 앱은 기상청 공식 지진정보를 이용하지만 기상청이 제공하는 앱이 아니며,
-  기상청과 무관한 개인 개발자가 만든 앱입니다. 지진 경보는 통신 상태와
+  기상청과 무관한 개인 개발자(재난안전앱, 김진하)가 만든 앱입니다. 지진 경보는 통신 상태와
   기기 설정에 따라 늦거나 오지 않을 수 있으므로, 긴급재난문자 등 공식
   경로와 함께 사용하시기 바랍니다.
 </footer>
